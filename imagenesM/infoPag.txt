@@ -1,0 +1,3 @@
+Este es un proyecto personal.
+la pagina principal indica quien es el autor de esta pagina y sus datos personales.
+se trata de ingresar los proyestos personales que se hayan desarrollado.
