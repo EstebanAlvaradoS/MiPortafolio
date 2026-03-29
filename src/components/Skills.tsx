@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
   ];
 
   const exploring = [
-    { name: 'Goland', icon: `${import.meta.env.BASE_URL}imgs/Icon_goland.png` },
+    { name: 'Goland', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
     { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
     { name: 'Machine Learning', icon: 'https://cdn-icons-png.flaticon.com/512/2103/2103633.png' },
     { name: 'Cybersecurity', icon: 'https://cdn-icons-png.flaticon.com/512/2092/2092663.png' },

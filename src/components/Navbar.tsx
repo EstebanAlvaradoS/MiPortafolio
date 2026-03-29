@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     }`}>
       <div className="container flex justify-between items-center">
         <a href="#hero" className="flex items-center gap-2 group">
-          <img src="/imgs/Esteba_Logo.png" alt="Logo" className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
+          <img src={`${import.meta.env.BASE_URL}imgs/Esteba_Logo.png`} alt="Logo" className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
           <span className="font-bold text-xl tracking-tight hidden sm:block">ESTEBAN <span className="text-sky-400">ALVARADO</span></span>
         </a>
 
