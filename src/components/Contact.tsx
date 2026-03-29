@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
       <div className="container flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
-            <img src="imgs/Esteba_Logo.png" alt="Logo" className="w-8 h-8 opacity-50" />
+            <img src={`${import.meta.env.BASE_URL}imgs/Esteba_Logo.png`} alt="Logo" className="w-8 h-8 opacity-50" />
             <span className="font-bold text-slate-400 uppercase tracking-widest text-sm">Esteban Alvarado</span>
           </div>
           <span className="text-xs text-slate-600">&copy; {new Date().getFullYear()} Todos los derechos reservados.</span>

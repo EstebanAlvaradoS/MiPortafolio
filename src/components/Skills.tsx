@@ -3,21 +3,21 @@ import React from 'react';
 const Skills: React.FC = () => {
   const mainSkills = [
     { name: 'Go', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
-    { name: 'Python', icon: 'imgs/Icon_python.png' },
-    { name: 'React', icon: 'imgs/Icon_React.png' },
-    { name: 'Angular', icon: 'imgs/Icon_angular.png' },
-    { name: 'Node.js', icon: 'imgs/Icon_node.png' },
-    { name: 'JavaScript', icon: 'imgs/Icon_javascript.png' },
+    { name: 'Python', icon: `${import.meta.env.BASE_URL}imgs/Icon_python.png` },
+    { name: 'React', icon: `${import.meta.env.BASE_URL}imgs/Icon_React.png` },
+    { name: 'Angular', icon: `${import.meta.env.BASE_URL}imgs/Icon_angular.png` },
+    { name: 'Node.js', icon: `${import.meta.env.BASE_URL}imgs/Icon_node.png` },
+    { name: 'JavaScript', icon: `${import.meta.env.BASE_URL}imgs/Icon_javascript.png` },
     { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-    { name: 'HTML5', icon: 'imgs/Icon_Html.png' },
-    { name: 'CSS3', icon: 'imgs/Icon_css.png' },
-    { name: 'Git', icon: 'imgs/Icon_git.png' },
-    { name: 'SQL', icon: 'imgs/Icon_sql.png' },
+    { name: 'HTML5', icon: `${import.meta.env.BASE_URL}imgs/Icon_Html.png` },
+    { name: 'CSS3', icon: `${import.meta.env.BASE_URL}imgs/Icon_css.png` },
+    { name: 'Git', icon: `${import.meta.env.BASE_URL}imgs/Icon_git.png` },
+    { name: 'SQL', icon: `${import.meta.env.BASE_URL}imgs/Icon_sql.png` },
     { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
   ];
 
   const exploring = [
-    { name: 'Java', icon: 'imgs/Icon_Java.webp' },
+    { name: 'Goland', icon: `${import.meta.env.BASE_URL}imgs/Icon_goland.png` },
     { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
     { name: 'Machine Learning', icon: 'https://cdn-icons-png.flaticon.com/512/2103/2103633.png' },
     { name: 'Cybersecurity', icon: 'https://cdn-icons-png.flaticon.com/512/2092/2092663.png' },
