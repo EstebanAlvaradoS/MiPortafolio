@@ -3,24 +3,24 @@ import React from 'react';
 const Skills: React.FC = () => {
   const mainSkills = [
     { name: 'Go', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
-    { name: 'Python', icon: `${import.meta.env.BASE_URL}imgs/Icon_python.png` },
-    { name: 'React', icon: `${import.meta.env.BASE_URL}imgs/Icon_React.png` },
-    { name: 'Angular', icon: `${import.meta.env.BASE_URL}imgs/Icon_angular.png` },
-    { name: 'Node.js', icon: `${import.meta.env.BASE_URL}imgs/Icon_node.png` },
-    { name: 'JavaScript', icon: `${import.meta.env.BASE_URL}imgs/Icon_javascript.png` },
+    { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+    { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+    { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
     { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-    { name: 'HTML5', icon: `${import.meta.env.BASE_URL}imgs/Icon_Html.png` },
-    { name: 'CSS3', icon: `${import.meta.env.BASE_URL}imgs/Icon_css.png` },
-    { name: 'Git', icon: `${import.meta.env.BASE_URL}imgs/Icon_git.png` },
-    { name: 'SQL', icon: `${import.meta.env.BASE_URL}imgs/Icon_sql.png` },
+    { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+    { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+    { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
     { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
   ];
 
   const exploring = [
     { name: 'Goland', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
     { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-    { name: 'Machine Learning', icon: 'https://cdn-icons-png.flaticon.com/512/2103/2103633.png' },
-    { name: 'Cybersecurity', icon: 'https://cdn-icons-png.flaticon.com/512/2092/2092663.png' },
+    { name: 'Machine Learning', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+    { name: 'Cybersecurity', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
   ];
 
   return (
@@ -33,11 +33,11 @@ const Skills: React.FC = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-16">
           {mainSkills.map((skill) => (
-            <div key={skill.name} className="glass group hover:border-sky-400/50 transition-all p-6 flex flex-col items-center gap-4 hover:bg-slate-800/60 cursor-default">
-              <div className="w-16 h-16 flex items-center justify-center p-2 rounded-2xl bg-slate-900/50 group-hover:scale-110 transition-transform duration-300">
-                <img src={skill.icon} alt={skill.name} className="max-w-full max-h-full object-contain" />
+            <div key={skill.name} className="glass glass-interactive skill-card group p-6 flex flex-col items-center gap-4 cursor-default">
+              <div className="skill-icon-container w-20 h-20 flex items-center justify-center p-3 rounded-2xl bg-slate-900/50 group-hover:scale-110 transition-transform duration-300">
+                <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(56,189,248,0.3)]" />
               </div>
-              <span className="font-semibold text-sm tracking-wide text-slate-300 group-hover:text-white transition-colors">{skill.name}</span>
+              <span className="skill-icon-container font-bold text-sm tracking-widest text-slate-300 group-hover:text-white transition-colors uppercase">{skill.name}</span>
             </div>
           ))}
         </div>
@@ -52,7 +52,7 @@ const Skills: React.FC = () => {
                 <div className="w-10 h-10 p-1 bg-slate-800 rounded group-hover:rotate-12 transition-transform">
                   <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
                 </div>
-                <span className="text-sm font-medium">{skill.name}</span>
+                <span className="text-base font-bold tracking-wide uppercase text-slate-400 group-hover:text-sky-400 transition-colors">{skill.name}</span>
               </div>
             ))}
           </div>

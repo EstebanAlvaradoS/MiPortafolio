@@ -60,6 +60,43 @@ h1, h2, h3, h4, .heading {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-interactive:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px var(--primary-glow);
+  background: rgba(30, 41, 59, 0.6);
+}
+
+.skill-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: var(--primary);
+  filter: blur(40px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.skill-card:hover::before {
+  opacity: 0.15;
+}
+
+.skill-icon-container {
+  position: relative;
+  z-index: 1;
 }
 
 .btn {
@@ -84,9 +121,9 @@ h1, h2, h3, h4, .heading {
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 25px var(--primary-glow);
-  filter: brightness(1.1);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px var(--primary-glow);
+  filter: brightness(1.15);
 }
 
 .btn-outline {
@@ -99,6 +136,8 @@ h1, h2, h3, h4, .heading {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--primary);
   color: var(--primary);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 section {

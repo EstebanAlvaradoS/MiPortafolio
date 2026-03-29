@@ -54,11 +54,11 @@ const Projects: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
-            <div key={idx} className="glass flex flex-col group overflow-hidden border border-slate-800/50 hover:border-sky-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-sky-500/10">
+            <div key={idx} className="glass glass-interactive flex flex-col group overflow-hidden border border-slate-800/50">
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={project.img} 
-                  alt={project.title} 
+                <img
+                  src={project.img}
+                  alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-75 group-hover:brightness-100"
                 />
                 <div className="absolute top-4 left-4">
@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
                 <p className="text-slate-400 text-sm mb-6 flex-grow leading-relaxed line-clamp-3">
                   {project.desc}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map(tag => (
                     <span key={tag} className="text-[10px] font-medium px-2 py-1 bg-slate-800 text-slate-300 rounded border border-slate-700">
