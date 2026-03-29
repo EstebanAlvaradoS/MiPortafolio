@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
         <div className="relative animate-fade-in delay-300">
           <div className="relative z-10 p-2 glass rotate-3 hover:rotate-0 transition-transform duration-500 max-w-sm mx-auto shadow-2xl">
             <img 
-              src="/imgs/IMG_2621.jpg" 
+              src="imgs/IMG_2621.jpg" 
               alt="Esteban Alvarado" 
               className="w-full h-auto rounded-lg grayscale hover:grayscale-0 transition-all duration-700"
             />
